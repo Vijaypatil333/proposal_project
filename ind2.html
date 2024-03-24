@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pleaseeeeeeee?</title>
+    <link rel="stylesheet" href="ind.css">
+</head>
+<body>
+    <div class="box">
+        <div class="one">
+            <img class="one" src="picoozi-cute-cat.gif" alt="Example GIF">
+        </div>
+        <div class="ques">
+            <h1>Pleaseeeeeeee?</h1>
+        </div>
+        <div class="butt">
+            <button class="but"  onclick="vote('yes')">Yes</button>
+            <button class="but" onclick="vote('no')">No</button>
+        </div>
+    </div>
+    <script>
+        function vote(choice) {
+            if (choice === 'yes') {
+                window.location.href = 'ind1.html';
+            } else {
+                window.location.href = 'ind3.html';
+            }
+        }
+    </script>  
+</body>
+</html>

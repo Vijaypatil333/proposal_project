@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby pleaseeee</title>
+    <link rel="stylesheet" href="ind.css">
+</head>
+<body>
+    <div class="box">
+        <div class="one">
+            <img class="one" src="love-you-forever.gif" alt="Example GIF">
+        </div>
+        <div class="ques">
+            <h1>Baby pleaseeeee?</h1>
+        </div>
+        <div class="lastbutt">
+            <button class="lastbutton1"  onclick="vote('yes')">Yes</button>
+            <button id="target" class="lastbutton2" onclick="vote('no')">No</button>
+        </div>
+    </div>
+    <script>
+        function vote(choice) {
+            if (choice === 'yes') {
+                window.location.href = 'ind1.html';
+            } else {
+                const target = document.getElementById('target')
+                function moveTarget(){
+                    const maxHeight = 100;
+                    const maxWidth = 800;
+
+                    const randomX = Math.floor(Math.random() * maxWidth);
+                    const randomY = Math.floor(Math.random() * maxHeight);
+
+                    target.style.left = randomX + 'px';
+                    target.style.top = randomY + 'px';
+                }
+
+                target.addEventListener('mouseover', function(){
+                    moveTarget();
+                })
+            }
+        }
+    </script> 
+</body>
+</html>

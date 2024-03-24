@@ -1,0 +1,64 @@
+
+body{
+    background-image: url(fireworks-7-usagif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box{
+    
+    background: linear-gradient(
+        to right,
+        #ec8f9057 30%,
+        rgba(250, 10, 46, 0.439) 70%
+      );
+    height: 70vh;
+    width: 30vw;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: 10px 20px 60px rgba(255, 0, 0, 0.562);
+}
+
+.one{
+    height: 50vh;
+    width: 30vw;
+    border-radius: 20px;  
+}
+
+.ques{
+    display: flex ;
+    justify-content: center;
+}
+
+.butt{
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    padding: 10px;
+}
+
+.but{
+    height: 40px;
+    width: 70px;
+    border-radius: 10px;
+    border: #f599c79c;
+    background: #f825255d;
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.but:hover{
+    background: linear-gradient(
+        rgba(250, 10, 46, 0.439) 10%,
+        #ec8f91 120%,
+        rgba(250, 10, 46, 0.439) 10%
+      ); 
+    color: white;
+    
+}
+
